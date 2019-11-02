@@ -5,7 +5,9 @@ categories: [blog, software engineering]
 tags: [clojure, xslt, xml, poc]
 ---
 
+<div class="large" markdown="1">
 ![Ronchamp](/assets/Ronchamp.jpg)
+</div>
 
 Chapelle Notre-Dame-du-Haut de Ronchamp is one of the greatest buildings 
 of the 20th century. Being architecturally complex, it remains visually simple.
@@ -164,7 +166,7 @@ a mapping function applied on the node attributes and children.
                                 (f (:content node))]
     ;; Attribute map?
     (map? node) node
-    ;; Text node
+    ;; Text node?
     (string? node) node))
 ```
 
