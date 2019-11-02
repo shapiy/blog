@@ -46,6 +46,17 @@ transformations. Similarly to XSLT, Clojure has an elementary syntax (XSLT's
 syntax is all XML). The difference is that the capacities are enormous. Moreover, 
 Clojure runs on JVM and supports Java interop.
 
+If you say it's just pointless, I can think of practical advantages of
+switching from the domain specific language.  
+
+1. Functionality. You have all the power of a standard library, plus thousands 
+   and thousands of libraries built by community at hand. Have to create Excel documents?
+   Easily! Have to fetch additional JSON input from a REST API?
+   No need to build extension JARs for that. 
+1. Performance. There's no stylesheet compilation overhead.
+1. Saving. You don't have to pay for enterprise editions of XSLT processors. You 
+   can easily code the functionality you lack.  
+
 In this first article, we'll develop a simple XML transformation in Clojure, 
 taking ground ideas from XSLT. The upcoming articles will expand on the topic. 
 
@@ -261,6 +272,6 @@ Thanks to its simplicity and functional approach, Clojure was a great choice
 for the proof of concept. 
 
 Now that we have the basic blocks, we can build on top of that. In the next article, 
-we'll implement an HTML to Markdown transform in bare Clojure.
+we'll implement an HTML to Markdown transformation in bare Clojure.
 
 Thanks for your time.
