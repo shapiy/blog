@@ -5,7 +5,7 @@ categories: [blog, software engineering]
 tags: [clojure, xslt, xml, poc]
 ---
 
-![Ronchamp](/assets/Ronchamp.jpg)
+![Ronchamp](/blog/assets/Ronchamp.jpg)
 
 Chapelle Notre-Dame-du-Haut de Ronchamp is one of the greatest buildings 
 of the 20th century. Being architecturally complex, it remains visually simple.
@@ -163,7 +163,7 @@ incredible complexity. And we want to build something similar in Clojure.
 
 We'll start with identity transform and update it to match the demonstrated XSLT stylesheet.
 
-![Ronchamp Plan](/assets/Ronchamp2.jpg)
+![Ronchamp Plan](/blog/assets/Ronchamp2.jpg)
 
 `copy` function imitates the `xsl:copy` instruction. It accepts a node and 
 a mapping function applied on the node attributes and children.
@@ -265,7 +265,7 @@ The source code: [http://bit.ly/2JHQKOQ](http://bit.ly/2JHQKOQ)
 
 # Conclusions
 
-![Ronchamp Light](/assets/Ronchamp3.jpg)
+![Ronchamp Light](/blog/assets/Ronchamp3.jpg)
 
 In this article, we provided a brief intro to the XSLT programming language. We discussed 
 its core ideas and used it to transform an XML document. Also, we reviewed
