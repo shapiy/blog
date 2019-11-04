@@ -17,7 +17,7 @@ navigation:                  # site navigation in the header
 icons:                      # icons in the header, see http://fontawesome.com/icons
 #  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
 #  github: "https://github.com/niklasbuschmann/contrast"
-  rss: "/feed.xml"
+  rss: "/blog/feed.xml"
 
 comments:                    # embed disqus or isso comments
 #  disqus: ""
