@@ -14,10 +14,10 @@ navigation:                  # site navigation in the header
     -   Posts: https://shapiy.github.io/blog/
     -   About me: https://shapiy.github.io
 
-#icons:                      # icons in the header, see http://fontawesome.com/icons
+icons:                      # icons in the header, see http://fontawesome.com/icons
 #  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
 #  github: "https://github.com/niklasbuschmann/contrast"
-#  rss: "/contrast/feed.xml"
+  rss: "/feed.xml"
 
 comments:                    # embed disqus or isso comments
 #  disqus: ""
