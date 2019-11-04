@@ -161,7 +161,9 @@ These approaches have one thing in common: they are imperative. XSLT, on the oth
 is strictly declarative (well, almost). Still, it can be used to build transformations of 
 incredible complexity. And we want to build something similar in Clojure.
 
-We'll start with identity transform and update it to match the demonstrated XSLT stylesheet. 
+We'll start with identity transform and update it to match the demonstrated XSLT stylesheet.
+
+![Ronchamp Plan](/assets/Ronchamp2.jpg)
 
 `copy` function imitates the `xsl:copy` instruction. It accepts a node and 
 a mapping function applied on the node attributes and children.
@@ -262,6 +264,8 @@ The only thing left is to implement the attribute mapping function:
 The source code: [http://bit.ly/2JHQKOQ](http://bit.ly/2JHQKOQ)
 
 # Conclusions
+
+![Ronchamp Light](/assets/Ronchamp3.jpg)
 
 In this article, we provided a brief intro to the XSLT programming language. We discussed 
 its core ideas and used it to transform an XML document. Also, we reviewed
