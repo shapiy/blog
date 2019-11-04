@@ -265,8 +265,6 @@ The source code: [http://bit.ly/2JHQKOQ](http://bit.ly/2JHQKOQ)
 
 # Conclusions
 
-![Ronchamp Light](/blog/assets/Ronchamp3.jpg)
-
 In this article, we provided a brief intro to the XSLT programming language. We discussed 
 its core ideas and used it to transform an XML document. Also, we reviewed
 the limitations of the language and implemented the same conversion 
