@@ -13,8 +13,9 @@ but he didn't.
 
 # Rationale
 
-XSLT is a powerful programming language with a single purpose: to 
-transform XML documents. The idea may sound confusing at first: why do 
+XSLT is a powerful programming language. Its main purpose is to 
+transform XML documents (although, it can be used with other types 
+of text documents). The idea may sound confusing at first: why do 
 we even need a separate technology to deal with XML transformations? 
 After all, every modern programming language has an XML library. 
 
@@ -276,3 +277,17 @@ Now that we have the basic blocks, we can build on top of that. In the next arti
 we'll implement an HTML to Markdown transformation in bare Clojure.
 
 Thanks for your time.
+
+# Update (Oct 5, 2019)
+In the first version of the article I said:
+> XSLT is a powerful programming language with a single purpose: to 
+transform XML documents
+
+I received feedback from the community that it is not true. First of all, 
+you can read text documents in XSLT. Also, you can produce any type of 
+textual output. This is a totally valid concern. So, I updated that sentence
+to more accurately reflect the abilities of the language.
+
+> XSLT is a powerful programming language. Its main purpose is to 
+transform XML documents (although, it can be used with other types 
+>of text documents). 
