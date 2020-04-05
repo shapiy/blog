@@ -73,10 +73,10 @@ depends on a certain environment state and cannot be started.
 ```
 
 Also, we have the `user` namespace used as the REPL entry point. It defines
-two functions: `go` and `reset` to manage the state lifecycle. I factored them according to (the recommendations)[https://github.com/tolitius/mount/tree/5d992042e45449e4f13c030a5200834b4f8904a9#the-importance-of-being-reloadable]
-of `mount` library. 
+two functions: `go` and `reset` to manage the state lifecycle. I factored them according to [the recommendations](https://github.com/tolitius/mount/tree/5d992042e45449e4f13c030a5200834b4f8904a9#the-importance-of-being-reloadable)
+of `mount` library authors. 
 
-Note that the `mount` library relies on the compiler to define the mount order.
+Note that `mount` relies on the compiler to define the mount order.
 Hence, when we require `clj-sample.rest`, the contained states start 
 after those in `clj-sample.db`.
 
@@ -128,14 +128,14 @@ Execution error (ExceptionInfo) at clj-sample.worker/eval3523$fn (worker.clj:5).
 Cannot start worker
 ```
 
-And there it is, in the initial refresh, `tools.namespace` has scanned the `src` folder
+And there it is. In the initial refresh, `tools.namespace` has scanned the `src` folder
 and loaded one additional state defined by `worker.clj`. The consequent `mount/start` then
-started this additional state, resulting in `Execution error (ExceptionInfo): Cannot start worker`.
+triggered this additional state, resulting in `Execution error (ExceptionInfo): Cannot start worker`.
 
 ## What can we do?
 
 As of now, `mount` [does not support](https://github.com/tolitius/mount/tree/5d992042e45449e4f13c030a5200834b4f8904a9#dependencies) dependency
-graphs. In a world of Spring, I would provide the container with a context, and
+graphs. In the world of Spring, I would provide the container with a context, and
 would be able to retrieve any bean along with it's dependencies. `mount`, on the other hand,
 is perfectly simple software. Simple tools are often open, set fewer preconditions, and thus 
 are more powerful. So, it takes more thinking to master `mount` then canonical dependency injection.
@@ -173,5 +173,5 @@ All the solutions tie `user.clj` to the single application, i.e., the web servic
 How can we separate the REPL workflow by an app? Ideally, I want to start and stop everything 
 related to `rest.clj` or `worker.clj` independently. 
 
-At least for me, this question is still open. All ideas look clumsy. So, if you've already 
+At least for me, this question remains open. All ideas look clumsy. So, if you've already 
 solved this problem, please [let me know](https://twitter.com/shapiydev).
