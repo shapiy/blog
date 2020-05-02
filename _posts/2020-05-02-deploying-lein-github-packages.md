@@ -63,10 +63,12 @@ Let's give our workflow the finishing touch by throwing `GITHUB_TOKEN` secret am
 the environment variables.
 
 ```yaml
+{% raw %}
 - name: Deploy
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   run: lein deploy github
+{% endraw %}
 ```
 
 Voilá!
