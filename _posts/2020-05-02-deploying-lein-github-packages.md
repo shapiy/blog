@@ -87,7 +87,7 @@ building and deploying Clojure packages in 2020.
     See Leiningen documentation on [library deployment](https://github.com/technomancy/leiningen/blob/master/doc/DEPLOY.md).
 
 [^3]:
-    Jiayu Yi's blog on [the same matter](https://blog.jiayu.co/2019/09/deploying-leiningen-projects-to-github-package-registry/)
+    Jiayu Yi's blog on [the same matter](https://blog.jiayu.co/2019/09/deploying-leiningen-projects-to-github-package-registry/).
 
 [^4]:
     [https://help.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables](https://help.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables)
