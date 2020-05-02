@@ -81,7 +81,7 @@ building and deploying Clojure packages in 2020.
 # Footnotes
 
 [^1]:
-    GitHub packages landing page: [https://github.com/features/packages]
+    GitHub packages landing page: [https://github.com/features/packages](https://github.com/features/packages)
 
 [^2]:
     See Leiningen documentation on [library deployment](https://github.com/technomancy/leiningen/blob/master/doc/DEPLOY.md).
