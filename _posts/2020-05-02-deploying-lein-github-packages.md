@@ -1,5 +1,5 @@
 ---
-title: "Deploying Leiningen projects to GitHib Packages in 2020"
+title: "Deploying Leiningen projects to GitHub Packages in 2020"
 categories: [blog, software engineering]
 tags: [clojure, leiningen, github, packages]
 ---
